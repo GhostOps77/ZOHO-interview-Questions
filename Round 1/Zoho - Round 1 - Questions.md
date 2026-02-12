@@ -1,8 +1,8 @@
-Pointers
-Strings
-Loops
-Complex and Nested Loops
-Control Flows
+Pointers,
+Strings,
+Loops,
+Complex and Nested Loops,
+Control Flows,
 
 ### 1. Output of this program?
 ```cpp
@@ -219,7 +219,7 @@ int main()
 **Explanation:**
 - The size of the union is determined by the size of its largest member. `arr[8]` is the largest member, occupying 8 bytes.
 
-### 10. Output of the program
+### 10. Find the output of the program
 ```c
 #include <stdio.h>
 char *c[] = {"GeksQuiz", "MCQ", "TEST", "QUIZ"};
@@ -245,8 +245,9 @@ TEST sQuiz Z CQ
 - `*--*++cpp+3` points to `"Z"`.
 - `*cpp[-2]+3` points to `"ST"`.
 - `cpp[-1][-1]+1` points to `"eksQuiz"`.
-```
-11. **Question 1:**
+
+### 11
+
 ```cpp
 #include <iostream>
 using namespace std;
@@ -259,9 +260,9 @@ int main() {
   return 0;
 }
 ```
-**Output:** 1020
+Output: `1020`
 
-12. **Question 2:**
+### 12
 ```cpp
 #include<iostream>
 
@@ -279,9 +280,9 @@ int main() {
     return 0;
 }
 ```
-**Output:** 1
+Output: `1`
 
-13. **Question 3:**
+### 13
 ```cpp
 #include <iostream>
 using namespace std;
@@ -298,9 +299,9 @@ int main() {
     return 0;
 }
 ```
-**Output:** 4
+Output: `4`
 
-14. **Question 4:**
+### 14
 ```c
 #include <stdio.h>
 
@@ -315,9 +316,9 @@ int main() {
    return 0;
 }
 ```
-**Output:** 236
+Output: `236`
 
-15. **Question 5:**
+### 15
 ```c
 int main() {
     int a[10][10] = {{1,2},{3,4},{5,6},{7,8},{9,10}};
@@ -327,9 +328,9 @@ int main() {
     return 0;
 }
 ```
-**Output:** 113
+Output: `113`
 
-16. **Question 6:**
+### 16
 ```c
 #include <stdio.h>
 
@@ -343,9 +344,9 @@ void main() {
     printf("%d", n * out);
 }
 ```
-**Output:** 20
+Output: `20`
 
-17. **Question 7:**
+### 17
 ```c
 #include <stdio.h>
 
@@ -360,9 +361,9 @@ int main() {
     return 0;
 }
 ```
-**Output:** 9
+Output: `9`
 
-18. **Question 8:**
+### 18
 ```c
 #include <stdio.h>
 
@@ -376,9 +377,9 @@ int main() {
     return 0;
 }
 ```
-**Output:** 1
+Output: `1`
 
-19. **Question 9:**
+### 19
 ```c
 #include <stdio.h>
 
@@ -390,9 +391,9 @@ int main() {
     return 0;
 }
 ```
-**Output:** 119
+Output: `119`
 
-20. **Question 10:**
+### 20
 ```c
 #include <stdio.h>
 
@@ -414,8 +415,7 @@ void main() {
     printf("%d", calc(c, b, a));
 }
 ```
-**Output:** 35
-
+Output: `35`
 
 ### 21
 ```c
