@@ -34,5 +34,5 @@ public class FirstOccurrences {
 // Explaination:
 // The index of P in first string is 7, O is 1, R is 6 and T is 11. The largest
 // range is 1 – 11.
-// So print the characters of the first string in this inex range i.e.
+// So print the characters of the first string in this index range i.e.
 // OHOCORPORAT

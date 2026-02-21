@@ -1,10 +1,14 @@
 ### 1. Greater on right side
-You are given an array Arr of size N. Replace every element with the next greatest element (greatest element on its right side) in the array. Also, since there is no element next to the last element, replace it with -1.
+[GFG](https://www.geeksforgeeks.org/problems/greater-on-right-side4305/1)
+[Java solution](./GreaterOnRightSide.java)
+[Java solution 2 (Brute force)](./GreaterOnRightSideBruteForce.java.java)
+
+You are given an array `arr` of size N. Replace every element with the next greatest element (greatest element on its right side) in the array. Also, since there is no element next to the last element, replace it with  `-1`.
 
 **Input:**
 ```
 N = 6
-Arr[] = {16, 17, 4, 3, 5, 2}
+arr[] = {16, 17, 4, 3, 5, 2}
 ```
 **Output:** `17 5 5 5 2 -1`
 
@@ -13,12 +17,11 @@ Arr[] = {16, 17, 4, 3, 5, 2}
 For 16 the greatest element  
 on its right is 17. For 17 it's 5.  
 For 4 it's 5. For 3 it's 5. For 5 it's 2.  
-For 2 it's -1(no element to its right).  
-So the answer is 17 5 5 5 2 -1  
-Link: https://www.geeksforgeeks.org/problems/greater-on-right-side4305/1
+For 2 it's -1 (no element to its right).  
+So the answer is 17 5 5 5 2 -1
 
 ### 2
-Given a Boolean matrix mat[M][N] of size M X N, modify it such that if a matrix cell mat[i][j] is 1 then make its adjacent cells as 0.
+Given a Boolean matrix `mat[M][N]` of size `M x N`, modify it such that if a matrix cell `mat[i][j]` is 1 then make its adjacent cells as 0.
 
 **Input:**
 ```
@@ -35,9 +38,9 @@ Given a Boolean matrix mat[M][N] of size M X N, modify it such that if a matrix 
 ```
 
 **Explanation:**
-- For the cell mat[0][0] which is 1, its adjacent cells (mat[0][1] and mat[1][0]) are modified to 0.
-- For the cell mat[1][1] which is 1, its adjacent cells (mat[0][1], mat[1][0], mat[1][2], and mat[2][1]) are modified to 0.
-- The modification is not applied to the cell mat[2][2] as it doesn't have all four adjacent cells.
+- For the cell `mat[0][0]` which is 1, its adjacent cells `(mat[0][1] and mat[1][0])` are modified to 0.
+- For the cell `mat[1][1]` which is 1, its adjacent cells `(mat[0][1], mat[1][0], mat[1][2], and mat[2][1])` are modified to 0.
+- The modification is not applied to the cell `mat[2][2]` as it doesn't have all four adjacent cells.
 
 ### 3
 Equilibrium index of an array is an index such that the sum of elements at lower indexes is equal to the sum of elements at higher indexes. For example, in an array A:
@@ -52,7 +55,7 @@ A[] = {-7, 1, 5, 2, -4, 3, 0}
 3 is an equilibrium index, because:
 `A[0] + A[1] + A[2] = A[4] + A[5] + A[6]`
 
-**Input:** A[] = {1, 2, 3}
+**Input:** `A[] = {1, 2, 3}`
 **Output:** -1
 
 ### 4
@@ -76,10 +79,7 @@ screen[M][N] = {
 
 x = 4, y = 4, newColor = 3
 ```
-The values in the given 2D screen indicate colors of the pixels.
-x and y are coordinates of the brush, newColor is the color that
-should replace the previous color on screen[x][y] and all surrounding
-pixels with same color.
+The values in the given 2D screen indicate colors of the pixels. x and y are coordinates of the brush, `newColor` is the color that should replace the previous color on `screen[x][y]` and all surrounding pixels with same color.
 
 **Output:**
 Screen should be changed to following.
@@ -97,7 +97,7 @@ screen[M][N] = {
 ```
 
 ### 5
-Given a matrix of 2D array of n rows and m coloumns. Print this matrix in ZIG-ZAG fashion as shown in figure.
+Given a matrix of 2D array of n rows and m columns. Print this matrix in ZIG-ZAG fashion as shown in figure.
 
 **Example:**
 
@@ -150,25 +150,37 @@ Print all possible subsets of the given array whose sum equal to given N.
 **Output:** {1, 2, 3}, {1, 5}, {2, 4}
 
 ### 9
-Reverse the words in the given String1 from the first occurrence of String2 in String1 by maintaining white Spaces.
+Reverse the words in the given `String1` from the first occurrence of `String2` in `String1` by maintaining white spaces.
 
 **Example:**
 
-String1 =
-**Input:** This is a test String only String2 = st  
+
+**Input:**
+String1 = This is a test String only
+String2 = st 
+
 **Output:** This is a only String test
 
 ### 10
 Calculate Maximum number of chocolates can eat and Number of wrappers left in hand.
 Money: Total money one has to spend.
 Price: price per chocolate.
-wrappers: minimum number of wrappers for exchange choco: number of chocolate for wrappers.
-Max visit: Maximum number of times one can visit the shop.(if zero consider it infinite)
+Wrappers: minimum number of wrappers for exchange
+Choco: number of chocolate for wrappers.
+Max visit: Maximum number of times one can visit the shop. (if zero consider it infinite)
 
 **Example:**
 
-**Input:** Money:40 Price:1 wrappers:3 choco:1 Max visit:1
-**Output:** total chocolate can eat: 53 wrappers left in hand:14
+**Input:**
+Money: 40
+Price: 1
+Wrappers: 3
+Choco: 1
+Max visit: 1
+
+**Output:**
+Total chocolate can eat: 53
+Wrappers left in hand: 14
 
 ### 11
 
@@ -184,7 +196,8 @@ Hce akr
 Rn ak
 ```
 
-### 13
+### 13. X pattern of given word
+[Java solution](./XpatternWithWord.java)
 
 Print the word with odd letters – PROGRAM
 
@@ -201,12 +214,13 @@ M     M
 ```
 
 ### 14. Alternate Sorting
+[Java solution](./AlternateSorting.java)
 
-**Input:** `{1, 2, 3, 4, 5, 6, 7}`  
-**Output:** `{7, 1, 6, 2, 5, 3, 4}`
+**Input:** {1, 2, 3, 4, 5, 6, 7}  
+**Output:** {7, 1, 6, 2, 5, 3, 4}
 
 ### 15
-Given an array of values persons[], each represents the weight of the persons. There will be infinite bikes available. Given a value K which represents the maximum weight that a bike accommodates. Along with that one more condition, a bike can carry two persons at a time. You need to find out the least number of times, the bike trips are made.
+Given an array of values `persons[]`, each represents the weight of the persons. There will be infinite bikes available. Given a value K which represents the maximum weight that a bike accommodates. Along with that one more condition, a bike can carry two persons at a time. You need to find out the least number of times, the bike trips are made.
 
 ### 16
 Assume there exists infinite grid, you’re given initial position x, y. Inputs will be movements either L or R or U or D. After n inputs, you need to give the current position.
@@ -221,7 +235,7 @@ U L R R D D U L R // 7 movements
 **Output:** `5 5`
 
 ### 17
-Given a matrix NxN, you are initially in the 0, 0 position. The matrix is filled with ones and zeros. Value “one” represents the path is available, while “zero” represents the wall. You need to find the can you able to reach the (N-1)x(N-1) index in the matrix. You can move only along the right and down directions if there’s “one” available.
+Given a matrix `NxN`, you are initially in the `(0, 0)` position. The matrix is filled with ones and zeros. Value “one” represents the path is available, while “zero” represents the wall. You need to find the can you able to reach the `(N-1) x (N-1)` index in the matrix. You can move only along the right and down directions if there’s “one” available.
 
 **Input:**
 ```c
@@ -248,7 +262,9 @@ Given an array of integers, compute the maximum value for each integer in the in
 
 **Explanation:** For index 0, the integer is 120. Summing the digits will give 3, and whereas Multiplying the digits gives 0. Thus, maximum of this two is 3.
 
-### 18
+### 18 No. of Islands
+[LeetCode](https://leetcode.com/problems/number-of-islands/description/)
+
 -1 represents ocean and 1 represents land find the number of islands in the given matrix.
 
 **Input:** n*n matrix
@@ -261,13 +277,14 @@ Given an array of integers, compute the maximum value for each integer in the in
 
 **Output:** 2 (2 islands that I have bold in matrix at 1, 1 and 2, 2)
 
-### 19
+### 19 Subset with Target sum
+[GFG](https://www.geeksforgeeks.org/dsa/perfect-sum-problem-print-subsets-given-sum/)
 Print all the possible subsets of array which adds up to give a sum.
 
 **Input:**
 ```
-array{2, 3, 5, 8, 10}
-sum=10
+{2, 3, 5, 8, 10}
+sum = 10
 ```
 
 **Output:**
@@ -298,7 +315,9 @@ Skip: 2nd
 ```
 
 ### 21
-Given N. print the following snake pattern (say N = 4). condition:  must not use arrays ( 1D array  or 2D array like Matrix ).
+Given N. print the following snake pattern (say N = 4). condition:  must not use arrays (1D/2D array like Matrix).
+[Java solution](./SnakePattern.java)
+
 ```
 1   2   3   4
 8   7   6   5
@@ -307,7 +326,7 @@ Given N. print the following snake pattern (say N = 4). condition:  must not use
 ```
 
 ### 22
-Given N. print the Latin Matrix (say N = 3). condition:  must not use strings(aka character literals), arrays (both 1D and 2D), inbuilt functions(like rotate).
+Given N. Print the Latin Matrix (say N = 3). condition:  must not use strings(aka character literals), arrays (both 1D and 2D), inbuilt functions(like rotate).
 ```
 A   B   C
 B   C   A
@@ -315,24 +334,24 @@ C   A   B
 ```
 
 ### 23
-Given a number N. find the minimum count of numbers in which N can be represented as a sum of numbers x1, x2, … xn. where xi is number whose digits are 0s and 1s.
+Given a number N. Find the minimum count of numbers in which N can be represented as a sum of numbers x<sub>1</sub>, x<sub>2</sub>, ... x<sub>n</sub> where x<sub>i</sub> is number whose digits are 0s and 1s.
 
 **Example 1:**
 
 **Input:** :  N = 33  
-**Output:** : count = 3.     33( 11 + 11 + 11 )
+**Output:** : count = 3.  33 (11 + 11 + 11)
 
-some other possibilities of 33 is (11 + 11 + 10 + 1),   (11 + 10 + 10 + 1 + 1 ), (10 + 10 + 10 + 1 + 1 + 1)
+Some other possibilities of 33 is (11 + 11 + 10 + 1), (11 + 10 + 10 + 1 + 1), (10 + 10 + 10 + 1 + 1 + 1)
 
 ### 24
-Finding all permutations of a string. ( backtracking approach ).
+Finding all permutations of a string. (Backtracking approach).
 
 ### 25
 Given an array of integers, write a program to re-arrange the array in the given form.
 1st_largest, 1st_smallest, 2nd_largest, 2nd_smallest, 3rd_largest ……. etc.
 
 ### 26
-Sort the given elements in decending order based on the number of factors of each element – Solution 1
+Sort the given elements in descending order based on the number of factors of each element
 
 ### 27
 Find whether the given number is palindrome or not. Don’t use arrays or strings
@@ -355,6 +374,7 @@ Check whether all english alphabets are present in the given sentence or not
 **Output:** False
 
 ### 32. Password Strength
+
 Find the strength of the given password string based on the conditions
 Four rules were given based on the type and no. of characters in the string.
 Weak – only Rule 1 is satisfied or Rule 1 is not satisfied
@@ -375,6 +395,7 @@ Strong – All Four rules satisfied
 **Output:** Strong
 
 ### 33. First Occurrences
+
 Given two strings, find the first occurrence of all characters of second string in the first string and
 print the characters between the least and the highest index
 
@@ -385,7 +406,9 @@ print the characters between the least and the highest index
 So print the characters of the first string in this inex range i.e. OHOCORPORAT
 
 ### 34. Matrix Diagonal sum
-Given a matrix print the largest of the sums of the two triangles split by diagonal from top right to bottom left
+[Java solution](./MatrixDiagonalSum.java)
+
+Given a matrix. Print the largest of the sums of the two triangles split by diagonal from top right to bottom left
 **Input:**
 ```
 3 3
@@ -396,6 +419,7 @@ Given a matrix print the largest of the sums of the two triangles split by diago
 **Output:** `38`
 
 ### 35. Matrix Addition
+
 Given n integer arrays of different size, find the addititon of numbers represented by the arrays
 
 **Input:**
@@ -444,8 +468,7 @@ Given a 6 blocks, of different height h1, …, h6 . Make 2 towers using 3 Blocks
 height of tower: 6 15
 ```
 
-**Output:**
-1 2 3 & 4 5 6
+**Output:** `1 2 3 & 4 5 6`
 
 ### 39
 Given a 5X5 chess board as input. 9 knights are placed in the board. Print whether the configuration valid or Invalid.
@@ -466,13 +489,13 @@ Given a String with or without special characters find if it is Palindrome or No
 ### 42
 Given an array of integers of size n. Convert the array in such a way that if next valid number is same as current number, double its value and replace the next number with 0. After the modification, rearrange the array such that all 0’s are shifted to the end.
 
-**Input:** arr[] = {2, 2, 0, 4, 0, 8}  
+**Input:** `arr[] = {2, 2, 0, 4, 0, 8}`  
 **Output:** `4 4 8 0 0 0`
 
-**Input:** arr[] = {0, 2, 2, 2, 0, 6, 6, 0, 0, 8}  
+**Input:** `arr[] = {0, 2, 2, 2, 0, 6, 6, 0, 0, 8}`  
 **Output:** `4 2 12 8 0 0 0 0 0 0`
 
-### 43. TWISTED PRIME NUMBER
+### 43. Twisted Prime number
 A number is said to be twisted prime if it is a prime number and reverse of the number is also a prime number.
 
 **Input:** 97  
@@ -482,7 +505,7 @@ and its reverse 79 is also a prime
 number.
 
 ### 44
-Given an array A[] and a number x, check for pair in A[] with sum as x.
+Given an array `A[]` and a number x, check for pair in `A[]` with sum as x.
 
 **Example:**
 
@@ -494,7 +517,8 @@ SUM : 5
 **Output:** `2 (1, 4) & (2, 3)`
 
 ### 45. Largest Sum Contiguous Subarray
-(Kadane’ Algorithm )
+
+(Kadane's Algorithm)
 
 ### 46. Diamond pattern
 
@@ -509,9 +533,10 @@ For given input size -> Here 3
 
 ### 46
 Given a text and a wildcard pattern, implement wildcard pattern matching algorithm that finds if wildcard pattern is matched with text. The matching should cover the entire text (not partial text).
-The wildcard pattern can include the characters ‘?’ and ‘*’
-‘?’ – matches any single character
-‘*’ – Matches any sequence of characters (including the empty sequence)
+The wildcard pattern can include the characters `?` and `*`
+`?` – matches any single character
+`*` – Matches any sequence of characters (including the empty sequence)
+
 **Example:**
 
 Text = “baaabab”,
@@ -529,8 +554,7 @@ Pattern = “a*ab”,
 Given an input string and a dictionary of words, find out if the input string can be segmented into a space-separated sequence of dictionary words. See following examples for more details.
 Consider the following dictionary
 ```
-{ i, like, sam, sung, samsung, mobile, ice,
-  cream, icecream, man, go, mango}
+{ i, like, sam, sung, samsung, mobile, ice, cream, icecream, man, go, mango }
 ```
 
 **Input:** ilike  
@@ -544,6 +568,8 @@ The string can be segmented as "i like samsung"
 or "i like sam sung".<>
 
 ### 48. Print the following pattern
+[Java solution](./NumericDiamondPattern.java)
+
 ```
    1
   3 2
@@ -562,7 +588,7 @@ Given an array as input, The condition is if the number is repeated you must add
 
 **Input:**
 ```
-arr[] = { 0, 2, 2, 2, 0, 6, 6, 0, 8}
+arr[] = { 0, 2, 2, 2, 0, 6, 6, 0, 8 }
 ```
 **Output:** `4 2 12 8 0 0 0 0 0`.
 
@@ -588,11 +614,9 @@ If we are solving this question using sorting, we need to use any O(nlogn) sorti
 
 ### 51
 Print all distinct permutations of a given string with duplicate characters.
-https://www.geeksforgeeks.org/distinct-permutations-string-set-2
-
+([GFG](https://www.geeksforgeeks.org/distinct-permutations-string-set-2))
 ### 52
 Given a number, find the next smallest palindrome.
-
 ### 53
 Given an array with repeated numbers, Find the top three repeated numbers.
 
@@ -600,9 +624,7 @@ Given an array with repeated numbers, Find the top three repeated numbers.
 ```
 array[] = {3, 4, 2, 3, 16, 3, 15, 16, 15, 15, 16, 2, 3}
 ```
-
 **Output:** `3, 16, 15`
-
 ### 54
 Given two dimensional matrix of integer and print the rectangle can be formed using given indices and also find the sum of the elements in the rectangle
 
@@ -648,6 +670,7 @@ division = 2
 
 ### 56
 Given a sentence of string, in that remove the palindrome words and print the remaining.
+[Java solution](./RemovePalindromeWords.java)
 
 **Input:**
 He did a good deed  
@@ -662,19 +685,28 @@ Hari speaks
 ### 57
 Given two dates, find total number of days between them.
 
-**Input:** dt1 = {10, 2, 2014} dt2 = {10, 3, 2015}  
+**Input:**
+dt1 = {10, 2, 2014}
+dt2 = {10, 3, 2015}  
+
 **Output:** 393
 dt1 represents “10-Feb-2014” and dt2 represents “10-Mar-2015” The difference is 365 + 28
 
-**Input:** dt1 = {10, 2, 2000} dt2 = {10, 3, 2000}  
+**Input:**
+dt1 = {10, 2, 2000}
+dt2 = {10, 3, 2000}  
 **Output:** 29
 Note that 2000 is a leap year
 
-**Input:** dt1 = {10, 2, 2000} dt2 = {10, 2, 2000}  
+**Input:**
+dt1 = {10, 2, 2000}
+dt2 = {10, 2, 2000}  
 **Output:** 0
 Both dates are same
 
-**Input:** dt1 = {1, 2, 2000}; dt2 = {1, 2, 2004};  
+**Input:**
+dt1 = {1, 2, 2000}
+dt2 = {1, 2, 2004}
 **Output:** 1461
 Number of days is 365*4 + 1
 
@@ -682,15 +714,13 @@ Number of days is 365*4 + 1
 Let 1 represent ‘A’, 2 represents ‘B’, etc. Given a digit sequence, count the number of possible decodings of the given digit sequence.
 Examples:
 
-**Input:** digits[] = “121”  
+**Input:** `digits[] = "121"`  
 **Output:** 3 (The possible decodings are “ABA”, “AU”, “LA”)
 
-**Input:** digits[] = “1234”  
+**Input:** `digits[] = "1234"`  
 **Output:** 3 (The possible decodings are “ABCD”, “LCD”, “AWD”)
-
 ### 59
 Print all possible words from phone digits
-
 ### 60
 Print longest sequence between same character
 
@@ -701,13 +731,11 @@ Print longest sequence between same character
 
 **Input:** aaaaaaaa  
 **Output:** 6
-
 ### 61
 sort the array odd numbers in ascending and even numbers in descending.
 
 **Input:** 5 8 11 6 2 1 7  
 **Output:** 1 5 7 11 8 6 2
-
 ### 62
 It’s about anagram.
 **Input:** was array of strings .and a word was given to find whether it has anagram in given array.
@@ -715,35 +743,27 @@ It’s about anagram.
 **Input:** catch, got, tiger, mat, eat, Pat, tap, tea
 Word: ate  
 **Output:** eat, tea
-
 ### 63
 array of numbers were given to find a number which has same sum of numbers in it’s either side.
 
 **Input:** 1, 2, 3, 7, 6  
 **Output:** 7(has 1+ 2+3 in left 6 in right)
-
 ### 64
 prime number – print n prime numbers
-
 ### 65
 prime factor – sort the array based on the minimum factor they have.
-
 ### 66
-adding a digit to all the digits of a number eg digit=4, number = 2875,
+adding a digit to all the digits of a number
+**Input:** digit=4, number = 2875
 **Output:** = 612119
-
 ### 67
 form the largest possible number using the array of numbers.
-
 ### 68
 lexicographic sorting.
-
 ### 69
 given a set of numbers, and a digit in each iteration, if the digit exists in any of  the numbers, remove its occurrences and ask for the next digit till the list becomes empty.
-
 ### 70
 Check if a number ‘a’ is present in another number ‘b.
-
 ### 71
 Find the extra element and its index
 
@@ -871,7 +891,7 @@ Print only numbers which is present in Fibonacci series (0 1 1 2 3 5 8 ...)
 
 ### 78
 
-NxN matrix will be provided. 0->block, 1->Not a block
+`NxN` matrix will be provided. 0->block, 1->Not a block
 Always starting point is (0,0), Ending point is (N-1,N-1).
 You have to go from starting point to ending point. One valid solution is enough.
 
@@ -933,8 +953,8 @@ Enter the elements  :  2 5 1 6 2 6 7 10
 
 **Input:**
 ```
-  Size of Array       :  4
-  Enter the elements  :  4 1 2 2
+Size of Array       :  4
+Enter the elements  :  4 1 2 2
 ```
 **Output:** `2`
 
@@ -1029,10 +1049,10 @@ Given two arrays. Find its union.
 
 **Input:**
 ```
-  Enter size of first array  :  6
-  Enter the elements    :  1 2 3 4 5 3
-  Enter size of second array  :  4
-  Enter the elements    :  1 2 7 5
+Enter size of first array  :  6
+Enter the elements         :  1 2 3 4 5 3
+Enter size of second array :  4
+Enter the elements         :  1 2 7 5
 ```
 
 **Output:** `1 2 3 4 5 7`
@@ -1281,7 +1301,8 @@ Should use RECURSION
 **Input:** one two three  
 **Output:** three two one
 
-### 108
+### 108. Find start of Sorted and Rotated array.
+[Java solution](./SortedAndRotatedArray.java)
 
 **Input:**
 ```
@@ -1310,7 +1331,8 @@ if arr is `[23,34,45,1,2,12]` then `[1,2,12]` is other part of sorted element
 then check the target value is under the sorted part of other
 according to that change the starting and ending position.
 
-### 109
+### 109. Justify Text upto Screen Length
+[Java solution](./ScreenLength.java)
 
 **Input:**
 ```
@@ -1319,17 +1341,18 @@ Sentence = Today is wednesda
 ```
 **Output:** `Today***is**wednesda`
 
-EXPLAINATION:
- first we need to find the number of space in the sentence.
-    remaining screen length should be find by subtracting the screenLength - sentence.length()
-    find the how many space need to add by (remainingScreenLength)/ spaceCount
-    when the addSpaceCount is odd the first space should add +1 than addSpaceValue and other place add normal.
+**Explanation:**
+- First we need to find the number of space in the sentence.
+- Remaining screen length should be find by subtracting the `screenLength - sentence.length()`
+- Find the how many space need to add by `(remainingScreenLength)/ spaceCount` when the `addSpaceCount` is odd the first space should add +1 than `addSpaceValue` and other place add normal.
 
 ### 110
-Find the frequence of the array without collection and inbuilt method in java.
+
+Find the frequency of the array without collection and inbuilt method in java.
 
 ### 111
-Write a program that will print the sum of diagonal elements of a 10X10 matrix. The program will take a total of 100 numbers as input (10 numbers will be input per line and each number will be separated by a space).
+
+Write a program that will print the sum of diagonal elements of a 10x10 matrix. The program will take a total of 100 numbers as input (10 numbers will be input per line and each number will be separated by a space).
 
 **Example 1**
 
@@ -1368,6 +1391,7 @@ Write a program that will print the sum of diagonal elements of a 10X10 matrix. 
 **Output:** 10
 
 ### 112
+[Java solution](./NumberStaircase.java)
 
 **Input:** 6  
 **Output:**
@@ -1381,6 +1405,7 @@ Write a program that will print the sum of diagonal elements of a 10X10 matrix. 
 14 16 18 20 22 24
 ```
 ### 113
+[Java solution](./NumericPattern.java)
 
 **Input:** 5  
 **Output:**
@@ -1391,7 +1416,8 @@ Write a program that will print the sum of diagonal elements of a 10X10 matrix. 
 4 5 1 2 3
 5 1 2 3 4
 ```
-### 114
+### 114. Numeric Right angled Triangle Pattern
+[Java solution](./NumbericRightAngleTrianglePattern.java)
 
 **Input:** 5  
 **Output:**
@@ -1404,7 +1430,7 @@ Write a program that will print the sum of diagonal elements of a 10X10 matrix. 
 ```
 
 ### 115. Integer to English Words
-Convert a non-negative integer num to its English words representation.
+Convert a non-negative integer num to it's English words representation.
 
 **Example 1:**
 
@@ -1429,8 +1455,9 @@ Convert a non-negative integer num to its English words representation.
 **Output:** is my mother tongue
 
 ### 117. Compare Version Numbers
+[Java solution](./CompareVersion.java)
 
-Given two version strings, version1 and version2, compare them. A version string consists of revisions separated by dots '.'. The value of the revision is its integer conversion ignoring leading zeros.
+Given two version strings, version1 and version2, compare them. A version string consists of revisions separated by dots `.`. The value of the revision is its integer conversion ignoring leading zeros.
 
 To compare version strings, compare their revision values in left-to-right order. If one of the version strings has fewer revisions, treat the missing revision values as 0.
 

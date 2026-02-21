@@ -1,38 +1,24 @@
-// 112. 
 public class NumericPattern {
-
     public static void main(String[] args) {
-        int n = 6, o = 1, e = 2;
-        for(int i = 1;i<=n;i++) {
-            for(int j=i;j<n;j++) {
-                System.out.print("  ");
+        int n = 5,count = 1,flag =1;
+        for (int i = 1; i <= n; i++) {
+            count=flag;
+            for (int j = 1; j <= n; j++) {
+                    count = count>n? count-n:count;
+                    System.out.print(count + " ");
+                    count++;
             }
-            for (int j = 1; j <= i ;j++) {
-                if(i%2 == 0){
-                    System.out.print(e+" ");
-                    e+=2;
-                } else {
-                    System.out.print(o+" ");
-                    o+=2;
-                }
-            }
+            flag++;
             System.out.println();
         }
     }
 }
 
-// Input:
-// 6
+// Input: 5
 
-// Output
-//                 1 
-//               2 4 
-//             3 5 7 
-//         6 8 10 12 
-//     9 11 13 15 17 
-// 14 16 18 20 22 24
-
-// Explaination:
-// Each row the number is increased by 2
-// if row is odd then the row should contain odd number of series
-// if row is even then the row should contain even number of series
+// Output:
+// 1 2 3 4 5 
+// 2 3 4 5 1 
+// 3 4 5 1 2
+// 4 5 1 2 3
+// 5 1 2 3 4

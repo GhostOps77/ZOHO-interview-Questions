@@ -21,20 +21,26 @@ public class ChessQueenMoves {
         }
         System.out.println();
         int drow = 1, dcol = 0;
-        if (drow == sourceRow || sourceCol == dcol || drow + dcol == sourceRow + sourceCol
-                || drow - dcol == sourceRow - sourceCol) {
-            System.out.println("valid");
-            for (int i = 0; i < row; i++) {
-                for (int j = 0; j < col; j++) {
-                    if (i == drow && j == dcol)
-                        board[i][j] = 1;
-                    else
-                        board[i][j] = 0;
-                    System.out.print(board[i][j] + " ");
-                }
-                System.out.println();
-            }
-        } else
+        if (
+            drow != sourceRow
+            && sourceCol != dcol
+            && drow + dcol != sourceRow + sourceCol
+            && drow - dcol != sourceRow - sourceCol
+        ) {
             System.out.println("not valid");
+            return;
+        }
+
+        System.out.println("valid");
+        for (int i = 0; i < row; i++) {
+            for (int j = 0; j < col; j++) {
+                if (i == drow && j == dcol)
+                    board[i][j] = 1;
+                else
+                    board[i][j] = 0;
+                System.out.print(board[i][j] + " ");
+            }
+            System.out.println();
+        }
     }
 }

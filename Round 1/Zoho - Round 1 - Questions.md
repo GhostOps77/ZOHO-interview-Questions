@@ -1,15 +1,10 @@
-Pointers,
-Strings,
-Loops,
-Complex and Nested Loops,
-Control Flows,
+Pointers, Strings, Loops, Complex and Nested Loops, Control Flows
 
 ### 1. Output of this program?
 ```cpp
 #include <iostream>
 using namespace std;
-int main()
-{
+int main() {
     int i, j, var = 'A';
     for (i = 5; i >= 1; i--) {
         for (j = 0; j < i; j++)
@@ -33,14 +28,12 @@ A
 ```c
 #include <stdio.h>
 void f(char**);
-int main()
-{
+int main() {
     char *argv[] = { "ab", "cd", "ef", "gh", "ij", "kl" };
     f(argv);
     return 0;
 }
-void f(char **p)
-{
+void f(char **p) {
     char *t;
     t = (p += sizeof(int))[-1];
     printf("%s\n", t);
@@ -55,12 +48,10 @@ gh
 ### 3. Output of the following program?
 ```c
 #include <stdio.h>
-void dynamic(int s, ...)
-{
+void dynamic(int s, ...) {
     printf("%d ", s);
 }
-int main()
-{
+int main() {
     dynamic(2, 4, 6, 8);
     dynamic(3, 6, 9);
     return 0;
@@ -75,8 +66,7 @@ int main()
 ### 4. Predict the output?
 ```c
 #include <stdio.h>
-int main()
-{
+int main() {
     void demo();
     void (*fun)();
     fun = demo;
@@ -84,8 +74,7 @@ int main()
     fun();
     return 0;
 }
-void demo()
-{
+void demo() {
     printf("program ");
 }
 ```
@@ -98,8 +87,7 @@ program program
 ### 5. Explain: What is the output of the following program?
 ```c
 #include <stdio.h>
-int main()
-{  
+int main() {  
    char str1[] = "ZohoInterview";
    char str2[] = {'t', 'e', 's', 't', 't', 'e', 's', 't', '1'};
    int n1 = sizeof(str1)/sizeof(str1[0]);
@@ -121,8 +109,7 @@ n1 = 14, n2 = 9
 ### 6. Explain: Predict the Output
 ```c
 #include <stdio.h>
-int main()
-{
+int main() {
     char str[] = "Aptitude";
     printf("%s %s %s\n", &str[5], &5[str], str+5);
     printf("%c %c %c\n", *(str+6), str[6], 6[str]);
@@ -144,19 +131,16 @@ d d d
 ```c
 #include <stdio.h>
 #define SIZE(arr) sizeof(arr) / sizeof(*arr)
-void fun(int* arr, int n)
-{
+void fun(int* arr, int n) {
     int i;
     *arr += *(arr + n - 1) += 10;
 }
-void printArr(int* arr, int n)
-{
+void printArr(int* arr, int n) {
     int i;
     for(i = 0; i < n; ++i)
         printf("%d ", arr[i]);
 }
-int main()
-{
+int main() {
     int arr[] = {10, 20, 30};
     int size = SIZE(arr);
     fun(arr, size);
@@ -178,13 +162,11 @@ int main()
 ### 8. Explain: Print the output
 ```c
 #include <stdio.h>
-struct st
-{
+struct st {
     int x;
     struct st next;
 };
-int main()
-{
+int main() {
     struct st temp;
     temp.x = 10;
     temp.next = temp;
@@ -198,14 +180,12 @@ int main()
 
 ### 9. Explain: Identify the output of the following
 ```c
-union test
-{
+union test {
     int x;
     char arr[8];
     int y;
 };
-int main()
-{
+int main() {
     printf("%d", sizeof(union test));
     return 0;
 }
@@ -225,8 +205,7 @@ int main()
 char *c[] = {"GeksQuiz", "MCQ", "TEST", "QUIZ"};
 char **cp[] = {c+3, c+2, c+1, c};
 char ***cpp = cp;
-int main()
-{
+int main() {
     printf("%s ", **++cpp);
     printf("%s ", *--*++cpp+3);
     printf("%s ", *cpp[-2]+3);
@@ -419,8 +398,7 @@ Output: `35`
 
 ### 21
 ```c
-switch(5)
-{
+switch (5) {
     default:printf("five");
     case 1:printf("one");
 }
@@ -431,7 +409,7 @@ Explanation: The `default` case gets executed since there's no matching case for
 
 ### 22
 ```c
-if(101)
+if (101)
     printf("hai");
 else
     printf("all");
@@ -442,7 +420,7 @@ Explanation: `101` is a non-zero value, which is considered `true` in C. Therefo
 
 ### 23
 ```c
-for(i=0;i<5;i++);
+for(i = 0; i <5 ; i++);
 printf("%d",i);
 ```
 Output: `5`
@@ -451,8 +429,7 @@ Explanation: The semicolon after the `for` loop creates an empty loop body. Afte
 
 ### 24
 ```c
-void main()
-{
+void main() {
     int a=10,b=20,c=30;
     printf("%d%d");
 }
@@ -463,17 +440,15 @@ Explanation: The `printf` function is missing the variables to be printed, leadi
 
 ### 25
 ```c
-main()
-{
-    int i=0;
-    switch(i)
-    {
+main() {
+    int i = 0;
+    switch(i) {
         case 0: i++;
-                printf("%d", i);
+			printf("%d", i);
         case 1:
-                printf("%d", i);
+			printf("%d", i);
         case 2:
-                printf("%d", i);
+			printf("%d", i);
     }
 }
 ```
@@ -484,9 +459,8 @@ Explanation: `case 0` increments `i` to `1`, then falls through to `case 1` and 
 ### 26
 ```c
 #define SQR(x) (x*x)
-main()
-{
-    int a, b=3;
+main() {
+    int a, b = 3;
     a = SQR(b+2);
     printf("%d", a);
 }
@@ -497,8 +471,7 @@ Explanation: `SQR(b+2)` expands to `(b+2*b+2)`, i.e., `3+2*3+2 = 3+6+2 = 11`.
 
 ### 27
 ```c
-int main()
-{
+int main() {
     int i;
     int arr[5] = {1};
     for(i = 0; i < 5; i++)
@@ -511,10 +484,9 @@ Explanation: The loop prints the values of `i` from `0` to `4`.
 
 ### 28
 ```c
-main()
-{
-    int x=0;
-    if(x=0)
+main() {
+    int x = 0;
+    if(x = 0)
         printf("value of x is zero");
     else
         printf("value of x is not zero");
@@ -526,18 +498,15 @@ Explanation: `if(x=0)` assigns `0` to `x`, which is `false`. Thus, `printf("valu
 
 ### 29
 ```c
-main()
-{
+main() {
     int i=0;
-    for(i=0; i<20; i++)
-    {
-        switch(i)
-        {
+    for(i = 0; i < 20; i++) {
+        switch(i) {
             case 0: i+=5;
             case 1: i+=2;
             case 5: i+=5;
             default: i+=4;
-                     break;
+				 break;
         }
         printf("%d", i);
     }
@@ -551,8 +520,7 @@ Explanation:
 
 ### 30
 ```c
-main()
-{
+main() {
     int x=20,y=35;
     x = y++ + x++;
     y = ++y + ++x;
@@ -567,8 +535,7 @@ Explanation:
 
 ### 31
 ```c
-void main()
-{
+void main() {
     printf("\n98");
     printf("\b76");
     printf("\r54");
@@ -580,11 +547,10 @@ Explanation: `\b` moves the cursor back, `\r` moves to the start of the line.
 
 ### 32
 ```c
-int main()
-{
-    int x=3;
-    if(x==2); x=0;
-    if(x==3) x++;
+int main() {
+    int x = 3;
+    if(x == 2); x = 0;
+    if(x == 3) x++;
     else
     printf("x=%d",x);
 }
@@ -595,8 +561,7 @@ Explanation: First `if` does nothing (semicolon); second `if` is false; `else` n
 
 ### 33
 ```c
-int main()
-{
+int main() {
     printf(" \" hai %% all \" ");
 }
 ```
@@ -606,8 +571,7 @@ Explanation: Escape sequences print double quotes and percent sign.
 
 ### 34
 ```c
-int main()
-{
+int main() {
     printf(5+"welcome");
 }
 ```
@@ -617,8 +581,7 @@ Explanation: Pointer arithmetic prints string starting from the 5th index.
 
 ### 35
 ```c
-int main()
-{
+int main() {
     printf("%c", 5["welcomeall"]);
 }
 ```
@@ -628,8 +591,7 @@ Explanation: Equivalent to `printf("%c", "welcomeall"[5]);`.
 
 ### 36
 ```c
-int main()
-{
+int main() {
     int x = printf("welcome");
     printf("%d", x);
 }
@@ -640,8 +602,7 @@ Explanation: `printf("welcome")` returns 7 (number of characters printed).
 
 ### 37
 ```c
-int main()
-{
+int main() {
     printf("%d", printf("%d", 1234));
 }
 ```
@@ -651,8 +612,7 @@ Explanation: Inner `printf` prints `1234` and returns 4, outer `printf` prints `
 
 ### 38
 ```c
-int main()
-{
+int main() {
     int a[25] = {1,2,3,4,5};
     printf("%d", sizeof(a)/sizeof(int));
 }
@@ -663,11 +623,9 @@ Explanation: `sizeof(a)` gives total bytes, divided by `sizeof(int)` gives array
 
 ### 39
 ```c
-void main()
-{
+void main() {
     int b=12;
-    switch(printf("%c%d", 't', b))
-    {
+    switch(printf("%c%d", 't', b))     {
         case 0: printf("Hello"); break;
         case 1: printf("Bye"); break;
         case 5: printf("Welcome"); break;

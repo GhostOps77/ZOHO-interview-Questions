@@ -1,7 +1,7 @@
 //116.
 import java.util.Scanner;
 
-public class RemovePalindrom {
+public class RemovePalindromeWords {
     public static boolean ispalindrome(String a) {
         a = a.toLowerCase();
         // System.out.println(a);

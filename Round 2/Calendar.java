@@ -50,9 +50,7 @@ public class Calendar {
                 int date = 24, month = 04, year = 2002;
                 int febLastDay = findFebLastDay(year);
                 int tempDate = tempDate(month, year), tempDay = febLastDay;
-                if (tempDate == date)
-                        System.out.println(day[tempDay]);
-                else {
+                if (tempDate != date) {
                         int dayDifference = date - tempDate;
                         if(date>tempDate) {
                                 tempDay  = (tempDay+dayDifference) % 7;
@@ -62,9 +60,8 @@ public class Calendar {
                                         tempDay+=7;
                                 }
                         }
-                        // System.out.println(tempDay);
-                        System.out.println(day[tempDay]);
                 }
+                System.out.println(day[tempDay]);
         }
 }
 
